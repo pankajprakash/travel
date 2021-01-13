@@ -1,0 +1,224 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Flamenco', cursive;;
+}
+body
+{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/website/images/hlw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.clearfix :after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+
+}
+
+
+
+
+.row
+{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo
+{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.mainNev
+{
+    float:right;
+    margin-top: 60px;
+}
+.mainNev li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.mainNev li a{
+   padding: 5px 5px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:90% ;
+    font-weight: 100;
+}
+.mainNev li a:hover{
+
+    border-bottom: 2px solid red;
+
+}
+.main
+{
+
+    width: 1180px;
+    position: absolute;
+    
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+
+}
+
+h1{
+    color:white;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn
+{
+display: inline block;
+padding: 10px 30 px;
+font-weight: lighter;
+text-decoration:none;
+border-radius: 20px;
+transition: background-color 0.2s,border 0.2s;,color 0.2s;
+text-transform: uppercase;
+
+
+}
+
+.btn-full
+{
+    background-color:transparent;
+    color: greenyellow;
+    margin-right: 15px;
+    border: 1px solid #cc8033;
+    ;
+}
+.btn-full:hover{
+    background-color:#ff8000;
+}
+
+.btn-nav
+{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.btn-nav:hover{
+    background-color: cornflowerblue
+    ;
+}
+
+.colorchange
+{
+    animation: colorchangewebsite 1s infinite;
+}
+    
+.lund
+{
+    color: aqua;
+}
+@keyframes colorchangewebsite {
+0%{
+color:red}
+
+    25%{color:green}
+    50%{color:brown}
+    100%{
+        color:blue;
+    }
+
+}
+.mobile-icon{
+    display: none;
+}
+/*responsive querry
+*/
+@media only screen and (max-width: 1180px){
+    .main{
+width: 100%;
+padding: 0 2%;
+}
+
+}
+
+@media only screen and (max-width: 998px){
+    h1{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+h1{
+font-size: 180%;
+    
+
+}
+
+.mainNev{
+    display: none;
+    
+}
+
+
+.mobile-icon{
+    display: inline-block;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.mainNev
+{
+    float: left;
+}
+
+.mainNev li
+{
+    
+    display: block;
+    margin-top: 10px;
+}
+}
+
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 160%;
+    }
+}
+
+.btn{
+   text-align: center;
+}
+.submit
+{
+
+  position: absolute;
+  top: 50%;
+}
